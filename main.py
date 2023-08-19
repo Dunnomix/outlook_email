@@ -4,9 +4,11 @@ from msal import ClientApplication
 
 
 class Config:
-    def __init__(self, username, password):
+    def __init__(self, username, password, client_id, authority):
         self.username = username
         self.password = password
+        self.client_id = client_id
+        self.authority = authority
         self.subject = 'Ticket Master Password Reset'
 
 
