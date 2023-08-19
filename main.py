@@ -39,6 +39,9 @@ def get_email_messages(config):
 if __name__ == '__main__':
     username = "aznprinze2k@hotmail.com"
     password = "okfrVFb1!"
-    config = Config(username=username, password=password)
+    client_id = '<your-client-id>'
+    authority = '<your-authority-url>'
+
+    config = Config(username=username, password=password, client_id=client_id, authority=authority)
     result = get_email_messages(config)
     print(result)
